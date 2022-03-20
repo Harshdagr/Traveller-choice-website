@@ -1,0 +1,185 @@
+/*Responsiveness*/
+
+@media screen and (min-width: 350px) {
+    .main-message {
+        transform: translateY(40%);
+    }
+
+    .summaries {
+        height: 50%;
+    }
+
+    .summary-text-box h3 {
+        font-size: 2.8rem;
+    }
+
+    .summary {
+        flex-direction: column;
+        margin: 0;
+        padding: 3rem;
+        border: none;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 470px) {
+    .hero::before {
+        height: 9.4rem;
+        background: url("../../images/wave-medium.png");
+        background-size: cover;
+    }
+
+    .summaries::before {
+        height: 9.4rem;
+        background: url("../../images/wave-medium-reversed.png");
+        background-size: cover;
+
+    }
+
+    .summaries {
+        height: 50vh;
+    }
+
+
+    .summary {
+        flex-direction: row;
+        margin-top: 20rem;
+        padding: 2rem;
+        border: 1px solid #fafafa;
+        justify-content: space-evenly;
+    }
+
+    .summary-text-box h3 {
+        font-size: 3rem;
+    }
+
+    .summary-text-box {
+        margin-left: 3rem;
+    }
+
+    .info {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+
+    .info p {
+        margin: 0.8rem;
+        font-size: 1.5rem;
+    }
+
+    .copy-right p {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+    header {
+        height: 8rem;
+    }
+
+    .nav-brand {
+        width: 3.5rem;
+    }
+
+    .nav-list {
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        position: initial;
+        top: initial;
+        right: initial;
+        flex-direction: row;
+        transition: initial;
+    }
+
+    .menu-icons {
+        display: none;
+    }
+
+    .nav-item {
+        margin: 0 2.5rem;
+    }
+
+    .nav-link,
+    .current {
+        color: #fafafa;
+        position: relative;
+        font-size: 1.8rem;
+    }
+
+    .nav-link::before,
+    .current::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -0.5rem;
+        background-color: #eb648c;
+        width: 100%;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 650ms;
+    }
+
+    .current::before {
+        transform: scaleX(1);
+    }
+
+    .nav-link:hover::before {
+        transform: scaleX(1);
+    }
+
+    .hero {
+        height: 60vh;
+    }
+
+    .main-message {
+        transform: translateY(30%);
+    }
+
+    .title-heading h1 {
+        font-size: 2.5rem;
+    }
+
+    .summaries {
+        height: 100%;
+    }
+
+    .summary-text-box h3 {
+        font-size: 3.5rem;
+    }
+
+    .copy-right p {
+        font-size: 2rem;
+    }
+
+}
+
+
+@media screen and (min-width: 950px) {
+    .hero::before {
+        height: 22.7rem;
+        background: url("../../images/wave-large.png");
+        background-size: cover;
+    }
+
+    .summaries::before {
+        height: 22.7rem;
+        background: url("../../images/wave-large-reversed.png");
+        background-size: cover;
+    }
+
+    .summary-text-box h3 {
+        font-size: 5rem;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        height: 75vh;
+    }
+}

@@ -1,0 +1,70 @@
+/*Footer styles*/
+
+footer {
+    margin: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.info p {
+    font-size: 1.2rem;
+}
+
+.info a {
+    font-size: 1rem;
+    margin: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.info a:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.info h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.help,
+.about,
+.discover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.copy-right {
+    text-align: center;
+
+}
+
+.copy-right p {
+    font-size: 1.3rem;
+}
+
+/*Icons*/
+
+.social-media {
+    text-align: center;
+    font-size: 4rem;
+}
+
+i#facebook-logo:hover {
+    color: #3b5998;
+}
+
+i#instagram-logo:hover {
+    color: #bc2a8d;
+}
+
+i#twitter-logo:hover {
+    color: #1DA1F2;
+}

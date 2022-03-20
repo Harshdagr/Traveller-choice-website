@@ -1,0 +1,239 @@
+/*Main Section styles*/
+
+.hero {
+    width: 100%;
+    height: 88vh;
+    background: linear-gradient(135deg,
+            rgba(49, 24, 131, 0.9) 8%,
+            rgba(72, 56, 149, 0.8) 50%),
+        url("../../images/lalibela.jpg") center no-repeat;
+
+    background-size: cover;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 4.7rem;
+    background: url("../../images/wave-small.png") center no-repeat;
+    background-size: cover;
+}
+
+.main-message {
+    width: 100%;
+    max-width: 50rem;
+    color: #fafafa;
+    text-transform: uppercase;
+    transform: translateY(20%);
+}
+
+.main-message h1 {
+    font-size: 1.6rem;
+}
+
+.main-message h4 {
+    font-family: "Aldrich", sans-serif;
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+.main-message p {
+    text-transform: lowercase;
+}
+
+.btn {
+    background-color: #eb648c;
+    border-radius: 2rem;
+    color: #fafafa;
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    transition: background-color 650ms;
+}
+
+.btn:hover {
+    background-color: #ce587b;
+}
+
+/*Experience Ethiopia*/
+
+.experiance-ethiopia {
+    padding: 0;
+}
+
+.title-heading {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.title-heading h3 {
+    font-size: 1.4rem;
+}
+
+.title-heading h2 {
+    font-family: "Aldrich", sans-serif;
+    font-size: 2rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.title-heading p {
+    text-transform: none;
+}
+
+
+.tours-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2.5rem;
+}
+
+.tours-grid-item {
+    height: 40rem;
+    padding: 5rem;
+    color: #fafafa;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.tours-grid-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg,
+            rgba(49, 24, 131, 0.9) 8%,
+            rgba(72, 56, 149, 0.8) 50%);
+    z-index: -1;
+}
+
+.axum {
+    background: url("../../images/axum.jpg") center no-repeat;
+}
+
+.harar {
+    background: url("../../images/harar.jpg") center no-repeat;
+}
+
+.gondar {
+    background: url("../../images/gondar.jpg") center no-repeat;
+}
+
+.omo {
+    background: url("../../images/omo.jpg") center no-repeat;
+}
+
+.sof-omer {
+    background: url("../../images/sofumer.jpg") center no-repeat;
+}
+
+.afar {
+    background: url("../../images/afar.jpg") center no-repeat;
+}
+
+
+.tours-grid-item h2 {
+    font-family: "Aldrich", sans-serif;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+
+
+/* Summaries */
+.summaries {
+    width: 100%;
+    height: 88vh;
+    background: linear-gradient(135deg,
+            rgba(49, 24, 131, 0.9) 8%,
+            rgba(72, 56, 149, 0.8) 50%),
+        url("../../images/highlands.jpg") center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+.summaries::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    height: 4.7rem;
+    background: url("../../images/wave-small-reversed.png") center no-repeat;
+    background-size: cover;
+}
+
+.summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10rem;
+    color: #fafafa;
+    text-align: center;
+    border: 1px solid #fafafa;
+    padding: 3rem;
+}
+
+.summary-text-box {
+    margin-top: 3rem;
+}
+
+.summary img {
+    width: 30rem;
+    height: auto;
+    margin-right: 0rem;
+    border-radius: 1rem;
+}
+
+.summary-text-box h3 {
+    font-size: 3rem;
+}
+
+.summary-text-box p {
+    color: #fafafa;
+}
+
+.view-all {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+
+/* @media screen and (min-width: 500px) {
+    .summary {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: inherit auto;
+
+    }
+
+    .summary img {
+        margin-right: 0;
+    }
+
+    .summary-text-box h3 {
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        height: 60vh;
+    }
+
+} */
